@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WiHackMap</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <link rel="icon" type="image/png" href="img/icon.png">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+        <h1 class="logo">
+            <img src="img/icon.png" style="height:50pt; vertical-align: middle;">
+            WiHackMap
+        </h1>
+        <ul class="nav-menu">
+          <li><a href="./">Inicio</a></li>
+          <li><a href="./about">About</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+        
+      <nav>
+        
+      </nav>
+    </div>
+  </header>
+
+  <div id="map"></div>
+<form>
+  <div class="search-container">
+    <!-- Input para buscar la ciudad -->
+
+    <input type="text" id="cityInput"  name="ciudad" minlength="3" placeholder="Buscar ciudad...">
+    <button id="searchButton">Buscar</button>
+  </div>
+</form>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2024 WifiMap. All rights reserved.</p>
+      <p>Designed by You</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/maps.js"></script>
+  <script src="js/generator.js"></script>
+</body>
+</html>

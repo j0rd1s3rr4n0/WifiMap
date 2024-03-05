@@ -1,0 +1,143 @@
+
+*{
+  font-family: 'Ubuntu', sans-serif;
+}
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-menu li:first-child {
+  margin-left: 0;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #ffcc00;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+/* Estilos específicos para el mapa */
+/* Estilos específicos para el mapa */
+#map {
+  height: calc(90vh - 100pt); /* Usar el 100% de la altura de la ventana del navegador, menos el tamaño del encabezado y el pie de página */
+  width: auto; /* Ocupar todo el ancho disponible */
+  margin: 25pt; /* Espacio adicional en la parte superior */
+  border: 1px solid #ddd; /* Agregar borde para separar el mapa del contenido circundante */
+  border-radius: 8px; /* Añadir bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar sombra suave */
+}
+
+
+
+/* SEARCH BAR*/
+/* Estilos para la barra de búsqueda */
+.search-container {
+  position: absolute;
+    top: 15pt;
+    right: 15pt;
+    z-index: 1000;
+    background-color: white;
+    padding: 8pt;
+    border-radius: 13px;
+    border: white solid 0pt;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input[type="text"] {
+  width: 200px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.search-container button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}
+/* Estilos para el campo de búsqueda */
+.search-bar {
+  padding: 8px 12px; /* Espaciado interno */
+  border: 2px solid #007bff; /* Borde sólido con color */
+  border-radius: 20px; /* Bordes redondeados */
+  background-color: transparent; /* Fondo transparente */
+  color: #333; /* Color del texto */
+  font-size: 16px; /* Tamaño del texto */
+  transition: border-color 0.3s ease; /* Transición suave para el color del borde */
+}
+
+.search-bar:focus {
+  outline: none; /* Eliminar el contorno al enfocar */
+  border-color: #0056b3; /* Cambiar el color del borde al enfocar */
+}
